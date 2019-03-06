@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> Jquery </title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<h1>JQuery</h1>
+			</div>
+		</div>
+	
+
+		<!-- Contenido -->
+		<form  method="" id="operaciones">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form-group">
+					    <label for="exampleInputEmail1">Primer número</label>
+					    <input 
+					    	type="number"
+					    	class="form-control"
+					    	id="first_number"
+					    	placeholder="Ingrese el primer número"
+					    	data-parsley-required-message="Ingrese un número"
+					    	data-parsley-required-container='#error_first_number'
+					    	required>
+					    	<div id="error_first_number"></div>
+				  	</div>	
+
+				  	<div class="form-group">
+					    <label for="exampleInputEmail1">Segundo número</label>
+					    <input 
+					    	type="number"
+					    	class="form-control"
+					    	id="second_number"
+					    	placeholder="Ingrese el segundo número"
+					    	data-parsley-required-message="Ingrese un segundo número"
+					    	data-parsley-required-container='#error_second_number'
+					    	required>
+					    	<div id="error_second_number"></div>
+				  	</div>
+				  	<hr class="linea">
+				  	<div class="form-group">
+					    <label for="exampleInputEmail1">Resultado</label>
+					    <input 
+					    	type="number"
+					    	class="form-control"
+					    	id="result"
+					    	placeholder="Resultado"
+					    	readonly>
+				  	</div>
+
+				</div>
+
+
+				<div class="col-md-6">
+					<p> Operaciones </p>
+					<button class="btn btn-primary" id="sum">Suma</button>
+					<button class="btn btn-primary" id="res">Resta</button>
+					<button class="btn btn-primary" id="mul">Multiplicación</button>
+					<button class="btn btn-primary" id="divi">Divición</button>
+				</div>
+				
+			</div>
+		</form>
+	</div>
+
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="js/parsley.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
